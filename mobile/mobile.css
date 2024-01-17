@@ -1,16 +1,16 @@
 * {
-    font-size: 45px;
+    font-size: 15px;
 }
 
 body {
     background-color: rgb(53, 53, 53);
-    font-size: 25px;
+    font-size: 15px;
 }
 
 button {
     background-color: rgb(26, 26, 26);
     border-color: rgb(26, 26, 26);
-    font-size: 25px;
+    font-size: 15px;
     transition: 2s;
     color: wheat;
 }
@@ -23,21 +23,21 @@ button:hover {
 input {
     background-color: rgb(26, 26, 26);
     border-color: rgb(26, 26, 26);
-    font-size: 25px;
+    font-size: 15px;
     transition: 2s;
     color: wheat;
 }
 
 a {
     color: rgb(26, 26, 26);
-    font-size: 45px;
+    font-size: 15px;
     transition: 1s;
 }
 
 select {
     background-color: rgb(26, 26, 26);
     border-color: rgb(26, 26, 26);
-    font-size: 25px;
+    font-size: 15px;
     transition: 2s;
     color: wheat;
 }
