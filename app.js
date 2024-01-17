@@ -14,6 +14,14 @@ function fiz_Davlen(F, S) {
     var Davlen = F/S;
     return `${Davlen}Па`;
 }
+function fiz_DavlenZhid(Plot, h) {
+    var Davlen = Plot*10*h;
+    return `${Davlen}Па`;
+}
+function fiz_Fupr(K, X) {
+    var Fupr = K*X;
+    return `${Fupr}Па`;
+}
 
 function go() {
     var formula = document.getElementById("formula").value;
@@ -30,5 +38,11 @@ function go() {
     }
     else if (formula === "dav") {
         document.getElementById("output").innerHTML = `Давление равно ${fiz_Davlen(i1, i2)} (${i1}/${i2})`;
+    }
+    else if (formula === "davJD") {
+        document.getElementById("output").innerHTML = `Давление равно ${fiz_DavlenZhid(i1, i2)} (${i1}*10*${i2})`;
+    }
+    else if (formula === "Fupr") {
+        document.getElementById("output").innerHTML = `Fупр равно ${fiz_Fupr(i1, i2)} (${i1}*${i2})`;
     }
 }

@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Формулы</title>
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../mobile.css">
     <script src="../app.js"></script>
-    <script src="check.js"></script>
-    <script src="device.js"></script>
+    <script src="../nav.js"></script>
 </head>
 <body>
     <header>
-        <a href="../"><button class="navbtn">Главная страница</button></a><a href=""><button class="navbtn">Формулы для физики</button></a>
+        <select id="nav">
+            <option value="main">Главная страница</option>
+            <option value="formuls">Формулы</option>
+        </select>
+        <button onclick="gt(); return false;">Перейти</button>
     </header>
     <main>
         <h1>Формулы</h1><br>
