@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формулы</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="../app.js"></script>
+</head>
+<body>
+    <header>
+        <a href=".."><button class="navbtn">Главная страница</button></a><a href=""><button class="navbtn">Формулы для физики</button></a>
+    </header>
+    <main>
+        <h1>Формулы</h1><br>
+        <div id="output" class="block"></div>
+        <p>
+            <select id="formula"><option value="false" disabled>Выберете формулу</option><option value="S">Площадь (S)</option><option value="Ftyazh">Fтяж</option><option value="P">Вес (P)</option><option value="dav">Давление (p)</option></select>
+        </p>
+        <p>Параметр 1:<input type="number" id="first">(длинна, масса, сила)</p>
+        <p>Параметр 2:<input type="number" id="second">(ширина, площадь)</p>
+        <button onclick="go(); return false;">Посчитать</button>
+    </main>
+    <footer>
+        By <a href="https://t.me/kotarsis8413">Комарик</a> with ♥
+    </footer>
+</body>
+</html>
