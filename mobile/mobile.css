@@ -1,18 +1,25 @@
+:root {
+    --bg-color-1: greenyellow; /*просто цвет*/
+    --bg-color-2: rgb(42, 42, 42); /*бг*/
+}
+
 * {
-    font-size: 15px;
+    color: greenyellow;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 body {
-    background-color: rgb(53, 53, 53);
-    font-size: 15px;
+    /* background-color: var(--bg-color-2); */
+    background: var(--bg-color-2);
+    font-size: 25px;
 }
 
 button {
     background-color: rgb(26, 26, 26);
     border-color: rgb(26, 26, 26);
-    font-size: 15px;
+    font-size: 25px;
     transition: 2s;
-    color: wheat;
+    color: green;
 }
 
 button:hover {
@@ -23,23 +30,23 @@ button:hover {
 input {
     background-color: rgb(26, 26, 26);
     border-color: rgb(26, 26, 26);
-    font-size: 15px;
+    font-size: 25px;
     transition: 2s;
-    color: wheat;
+    color: green;
 }
 
 a {
     color: rgb(26, 26, 26);
-    font-size: 15px;
+    font-size: 25px;
     transition: 1s;
 }
 
 select {
     background-color: rgb(26, 26, 26);
     border-color: rgb(26, 26, 26);
-    font-size: 15px;
+    font-size: 25px;
     transition: 2s;
-    color: wheat;
+    color: green;
 }
 select:hover {
     color: rgb(197, 253, 113);
@@ -51,7 +58,7 @@ a:hover {
 }
 
 footer {
-    background-color: rgb(153, 153, 153);
+    background: linear-gradient(var(--bg-color-2), var(--bg-color-1));
     position: absolute;
     bottom: 0;
     left: 0;
@@ -59,7 +66,7 @@ footer {
     height: 75px;
 }
 header {
-    background-color: rgb(153, 153, 153);
+    background: linear-gradient(var(--bg-color-1), var(--bg-color-2));
     position: absolute;
     top: 0;
     left: 0;
@@ -77,9 +84,11 @@ main {
 }
 
 header .navbtn {
-    border-color: rgb(116, 116, 116);
     border-radius: 0;
-    background-color: rgb(116, 116, 116);
+    color: greenyellow;
+    background: linear-gradient(var(--bg-color-1), var(--bg-color-2));
+    border-color: black;
+    border-style: solid;
     width: auto;
     height: 75px;
 }
@@ -90,3 +99,4 @@ main .block {
     max-width: 50%;
     font-size: 25px;
 }
+
