@@ -108,6 +108,9 @@ main .block {
     border-radius: 10px;
     width: 650px;
 
+    position: absolute;
+    top: 75px;
+
     max-width: 650px;
     max-height: 450px;
     overflow: auto;
