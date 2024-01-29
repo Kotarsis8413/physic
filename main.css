@@ -100,3 +100,29 @@ main .block {
     font-size: 25px;
 }
 
+
+
+.chat {
+    background-color: rgb(18, 18, 18);
+    border-color: greenyellow;
+    border-radius: 10px;
+    width: 650px;
+
+    max-width: 650px;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.chat .msg {
+    background-color: rgba(49, 49, 49, 0.388);
+    border-color: rgba(172, 255, 47, 0.388);
+    font-size: 25px;
+    font-weight: bold;
+    
+    width: 250px;
+    max-width: 250px;
+    max-height: 550px;
+    overflow: auto;
+
+    border-radius: 10px;
+}
