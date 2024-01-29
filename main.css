@@ -109,7 +109,7 @@ main .block {
     width: 650px;
 
     position: absolute;
-    top: 75px;
+    top: 100px;
 
     max-width: 650px;
     max-height: 450px;
@@ -128,4 +128,9 @@ main .block {
     overflow: auto;
 
     border-radius: 10px;
+}
+
+.sendmsg {
+    position: absolute;
+    bottom: 100px;
 }
