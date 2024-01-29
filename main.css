@@ -106,6 +106,7 @@ main .block {
     background-color: rgb(18, 18, 18);
     border-color: greenyellow;
     border-radius: 10px;
+    border-style: solid;
     width: 650px;
 
     position: absolute;
