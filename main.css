@@ -134,4 +134,5 @@ main .block {
 .sendmsg {
     position: absolute;
     bottom: 80px;
+    left: 650px;
 }
