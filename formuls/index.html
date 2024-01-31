@@ -40,12 +40,16 @@
                 document.getElementById("par1").innerHTML = "-";
                 document.getElementById("par2").innerHTML = "-";
             }
+            else if (formula == "h") {
+                document.getElementById("par1").innerHTML = "Давление (p)";
+                document.getElementById("par2").innerHTML = "Плотность (ρ)";
+            }
         }
     </script>
 </head>
 <body>
     <header>
-        <a href="https://kotarsis8413.github.io/physic/"><button class="navbtn">Главная страница</button></a><a href="https://kotarsis8413.github.io/physic/formuls"><button class="navbtn">Формулы для физики</button></a><a href="http://f0895978.xsph.ru/"><button class="navbtn">MeeevoChat</button></a><a href="http://f0895978.xsph.ru/mps"><button class="navbtn">MPS</button></a><a href="http://f0895978.xsph.ru/wall"><button class="navbtn">MeeevoWall</button></a><a href="http://f0895978.xsph.ru/questions/"><button class="navbtn">MeeevoQuestion</button></a>
+        <a href="https://kotarsis8413.github.io/"><button class="navbtn">Главная страница</button></a><a href="https://kotarsis8413.github.io/physic/formuls"><button class="navbtn">Формулы для физики</button></a><a href="http://f0895978.xsph.ru/"><button class="navbtn">MeeevoChat</button></a><a href="http://f0895978.xsph.ru/mps"><button class="navbtn">MPS</button></a><a href="http://f0895978.xsph.ru/wall"><button class="navbtn">MeeevoWall</button></a><a href="http://f0895978.xsph.ru/questions/"><button class="navbtn">MeeevoQuestion</button></a>
     </header>
     <main>
         <h1>Формулы</h1><br>
@@ -58,11 +62,13 @@
             <option value="Ftyazh">Fтяж</option>
             <option value="P">Вес (P)</option>
             <option value="dav">Давление (p)</option>
-            <option value="davJD">Давление жидкости (p)</option></select>
+            <option value="davJD">Давление жидкости (p)</option>
+            <option value="h">Высота (h)</option>
+            </select>
             <button onclick="show(); return false;">Показать требуемые параметры</button>
         </p>
         <p>
-            <select id="g"><option value="false" disabled selected>Число g равно</option><option value="9.8">9.8Н</option><option value="10">10Н</option></select>
+            <select id="g"><option value="false" disabled selected>Число g равно</option><option value="9.8">9.8Н/кг</option><option value="10">10Н/кг</option></select>
         </p>
         <p>Параметр 1:<input type="number" id="first"><span id="par1">(длинна, масса, сила, плотность, жёсткость)</span></p>
         <p>Параметр 2:<input type="number" id="second"><span id="par2">(ширина, площадь, высота сосуда, деформация)</span></p>

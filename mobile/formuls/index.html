@@ -7,12 +7,54 @@
     <link rel="stylesheet" href="../mobile.css">
     <script src="../../app.js"></script>
     <script src="../nav.js"></script>
+    <script>
+        function show() {
+            var formula = document.getElementById("formula").value;
+
+            if (formula == "S") {
+                document.getElementById("par1").innerHTML = "Длинна (a)";
+                document.getElementById("par2").innerHTML = "Ширина (b)";
+            }
+            else if (formula == "Fupr") {
+                document.getElementById("par1").innerHTML = "Жёсткость (k)";
+                document.getElementById("par2").innerHTML = "Деформация (x)";
+            }
+            else if (formula == "P") {
+                document.getElementById("par1").innerHTML = "Масса (m)";
+                document.getElementById("par2").innerHTML = "-";
+            }
+            else if (formula == "Ftyazh") {
+                document.getElementById("par1").innerHTML = "Масса (m)";
+                document.getElementById("par2").innerHTML = "-";
+            }
+            else if (formula == "dav") {
+                document.getElementById("par1").innerHTML = "Сила (F)";
+                document.getElementById("par2").innerHTML = "Площадь (S)";
+            }
+            else if (formula == "davJD") {
+                document.getElementById("par1").innerHTML = "Плотность (ρ)";
+                document.getElementById("par2").innerHTML = "Высота сосуда (h)";
+            }
+            else if (formula == "false") {
+                document.getElementById("par1").innerHTML = "-";
+                document.getElementById("par2").innerHTML = "-";
+            }
+            else if (formula == "h") {
+                document.getElementById("par1").innerHTML = "Давление (p)";
+                document.getElementById("par2").innerHTML = "Плотность (ρ)";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <select id="nav">
-            <option value="main">Главная страница</option>
-            <option value="formuls">Формулы</option>
+            <option value="https://kotarsis8413.github.io/">Главная страница</option>
+            <option value="https://kotarsis8413.github.io/physic/formuls/">Формулы</option>
+            <option value="http://f0895978.xsph.ru/">MeeevoChat</option>
+            <option value="http://f0895978.xsph.ru/mps">MPS</option>
+            <option value="http://f0895978.xsph.ru/wall">MeeevoWall</option>
+            <option value="http://f0895978.xsph.ru/questions/">MeeevoQuestion</option>
         </select>
         <button onclick="gt(); return false;">Перейти</button>
     </header>
@@ -20,13 +62,22 @@
         <h1>Формулы</h1><br>
         <div id="output" class="block"></div>
         <p>
-            <select id="formula"><option value="false" disabled selected>Выберете формулу</option><option value="S">Площадь (S)</option><option value="Fupr">Fупр</option><option value="Ftyazh">Fтяж</option><option value="P">Вес (P)</option><option value="dav">Давление (p)</option><option value="davJD">Давление жидкости (p)</option></select>
+            <select id="formula"><option value="false" disabled selected>Выберете формулу</option>
+                <option value="S">Площадь (S)</option>
+                <option value="Fupr">Fупр</option>
+                <option value="Ftyazh">Fтяж</option>
+                <option value="P">Вес (P)</option>
+                <option value="dav">Давление (p)</option>
+                <option value="davJD">Давление жидкости (p)</option>
+                <option value="h">Высота (h)</option>
+            </select>
+            <button onclick="show(); return false;">Показать требуемые параметры</button>
         </p>
         <p>
-            <select id="g"><option value="false" disabled selected>Число g равно</option><option value="9.8">9.8Н</option><option value="10">10Н</option></select>
+            <select id="g"><option value="false" disabled selected>Число g равно</option><option value="9.8">9.8Н/кг</option><option value="10">10Н/кг</option></select>
         </p>
-        <p>Параметр 1:<input type="number" id="first">(длинна, масса, сила, плотность, жёсткость)</p>
-        <p>Параметр 2:<input type="number" id="second">(ширина, площадь, высота сосуда, деформация)</p>
+        <p>Параметр 1:<input type="number" id="first"><span id="par1">(длинна, масса, сила, плотность, жёсткость)</span></p>
+        <p>Параметр 2:<input type="number" id="second"><span id="par2">(ширина, площадь, высота сосуда, деформация)</span></p>
         <button onclick="go(); return false;">Посчитать</button>
     </main>
     <footer>

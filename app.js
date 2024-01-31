@@ -22,6 +22,11 @@ function fiz_Fupr(K, X) {
     var Fupr = K*X;
     return `${Fupr}Па`;
 }
+function fiz_h(p, ro, g) {
+    var temp = ro*g;
+    var h = p/temp;
+    return `${h}м`;
+}
 
 function go() {
     var formula = document.getElementById("formula").value;
@@ -41,9 +46,12 @@ function go() {
         document.getElementById("output").innerHTML = `Давление равно ${fiz_Davlen(i1, i2)} (${i1}/${i2}) Формула: F/S`;
     }
     else if (formula === "davJD") {
-        document.getElementById("output").innerHTML = `Давление равно ${fiz_DavlenZhid(i1, i2, g)} (${i1}*${g}*${i2})`;
+        document.getElementById("output").innerHTML = `Давление равно ${fiz_DavlenZhid(i1, i2, g)} (${i1}*${g}*${i2}) Формула: ρ*gh`;
     }
     else if (formula === "Fupr") {
-        document.getElementById("output").innerHTML = `Fупр равно ${fiz_Fupr(i1, i2)} (${i1}*${i2})`;
+        document.getElementById("output").innerHTML = `Fупр равно ${fiz_Fupr(i1, i2)} (${i1}*${i2}) Формула: k*x (k*Δl)`;
+    }
+    else if (formula === "h") {
+        document.getElementById("output").innerHTML = `Высота равна ${fiz_h(i1, i2, g)} (${i1}/(${i2}*${g})) Формула: p/(ρ*g)`;
     }
 }
